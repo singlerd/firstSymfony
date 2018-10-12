@@ -1,27 +1,32 @@
 {% extends 'base.html.twig'  %}
 {% block title %}Read, {{ title }} {% endblock %}
+
 {% block body %}
 
+ <div class="nav-wraper container">
 
 
-<h1>{{ title }}</h1>
 
-<div>
+    <h3>{{ title }}</h3>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, quis.</p>
+        <div>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto dicta facere illo, pariatur voluptates!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, quis.</p>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa dicta dolores impedit iusto neque omnis reiciendis rem sequi ullam vero.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto dicta facere illo, pariatur voluptates!</p>
 
-</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa dicta dolores impedit iusto neque omnis reiciendis rem sequi ullam vero.</p>
 
-<h2>Comments ({{ comments|length }})</h2>
+        </div>
 
-<ul>
-    {% for comment in comments %}
-        <li>{{ comment }}</li>
-    {% endfor %}
+        <h3>Comments ({{ comments|length }})</h3>
 
-</ul>
+        <ul>
+            {% for comment in comments %}
+                <li>{{ comment }}</li>
+            {% endfor %}
+
+        </ul>
+ </div>
+
 {% endblock %}
