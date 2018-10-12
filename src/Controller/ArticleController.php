@@ -30,7 +30,9 @@ class ArticleController
     public function show($slug)
     {
         return new Response(
-            sprintf('Future page to show article: %s', $slug));
+            sprintf('Future page to show article: %s',
+                $slug));
     }
+
 
 }
